@@ -1,0 +1,28 @@
+const urlBase = "http://localhost:5000/v1/"
+
+
+const headers = new Headers()
+headers.append('content-type', 'application/json')
+
+
+/*
+    dados = {
+        nome: string,
+        email: string,
+        senha: string,
+        foto: string
+    }
+*/
+
+
+export const signupService = async () => {
+    const url = urlBase + 'user'
+
+    const resposta = fetch(url, {
+        headers,
+        method: 'POST',
+        body: JSON.stringify(dados)
+    })
+
+    return await resposta.json()
+}

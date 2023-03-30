@@ -12,6 +12,13 @@ body {
     box-sizing: border-box;
 }
 
+form {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;      
+
+}
+
 input:not(input[type='radio']):not(input[type='checkbox']), button {
     min-height: 40px;
     padding: 5px 10px;

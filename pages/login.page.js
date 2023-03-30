@@ -12,7 +12,10 @@ const eventos = () => {
 
         loginService(dadosDoFormulario)
             .then(({data}) => {
-                console.log(data.nome)
+                window.sessionStorage.setItem('@token', data.token)
+                window.sessionStorage.setItem('@user', JSON.stringify(dadosUsuario))
+                window.location.href = '#contacts'
+                return
             })
             .catch((erro) => {
                 console.log(erro)
