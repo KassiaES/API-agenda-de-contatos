@@ -41,13 +41,13 @@ export const Signup = () => {
             <a href="/#login">Cancelar</a>
         </p>      
         <form name="register">
-        <label for="name">Nome completo</label>
-        <input type="text" name="name" id="name" required>
+        <label for="nome">Nome completo</label>
+        <input type="text" name="nome" id="nome" required>
         <label for="email">E-mail</label>
         <input type="email" name="email" id="email" required>        
-        <label for="phoneNumber">Telefone</label>
-        <input type="text" name="phoneNumber" id="phoneNumber">
-        <label for="phoneType">tipo de telefone</label>
+        <label for="telefone">Telefone</label>
+        <input type="text" name="telefone" id="telelfone">
+        <label for="tipoTelefone">tipo de telefone</label>
         <fieldset>
             <label for="homePhoneType">casa</label>
             <input type="radio" name="phoneType" id="homePhoneType" value="casa">
@@ -64,9 +64,9 @@ export const Signup = () => {
         <label for="estado">Estado</label>
         <input type="text" name="estado" id="estado">
         <label for="cep">CEP</label>
-        <input type="text" name="cep" id="cep">
-        <label for="pais">País</label>
-        <input type="text" name="pais" id="pais">
+        <input type="text" name="cep" id="cep">        
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha" required>
     </form>
         <button type="submit">Cadastrar</button>
         <span></span>
