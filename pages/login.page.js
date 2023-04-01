@@ -14,7 +14,7 @@ const eventos = () => {
             .then(({data}) => {
                 window.sessionStorage.setItem('@token', data.token)
                 window.sessionStorage.setItem('@user', JSON.stringify(dadosUsuario))
-                window.location.href = '#contacts'
+                window.location.href = '/#contacts'
                 return
             })
             .catch((erro) => {
@@ -33,7 +33,9 @@ export const Login = () => {
         <label for="email">E-mail</label>
         <input type="email" name="email">
         <label for="senha">Senha</label>
-        <input type="password" name="senha">        
+        <input type="password" name="senha">    
+        <button type="submit">Entrar</button>
+    
         <br>
         <p>
             Não tem conta? <a href="/#signup">crie aqui</a>

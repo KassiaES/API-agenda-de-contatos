@@ -1,11 +1,13 @@
 #c-header {
     display: flex;
-    background-color: blueviolet;
-    color: white;
+    background-color:aliceblue;
+    color:teal;
     justify-content: space-between;
     padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 #c-header a {
-    color: white;
+    color: teal;
 }

@@ -2,6 +2,7 @@
 @import url(./styles/header.component.css);
 @import url(./styles/404.page.css);
 @import url(./styles/signup.page.css);
+@import url(./styles/card-contact-component.css);
 
 body {
     margin: 0;

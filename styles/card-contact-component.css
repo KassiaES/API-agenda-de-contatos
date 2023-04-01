@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: blueviolet;
+    background-color:aliceblue;
     color: white;
     margin-bottom: 10px;
     padding: 10px;
@@ -10,7 +10,7 @@
 }
 
 .c-card-contact a {
-    color: white;
+    color:teal;
 }
 
 .c-card-contact p {

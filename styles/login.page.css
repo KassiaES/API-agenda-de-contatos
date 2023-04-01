@@ -16,6 +16,7 @@
 #p-login input[type='radio'], input[type='checkbox'] {
     margin-left: 0;
     margin-right: 10px;
+    border-radius: 10px;
 }
 
 #p-login input:not(input[type='radio']):not(input[type='checkbox']), 
@@ -26,6 +27,7 @@
     box-sizing: border-box;
     color: black;
     font-size: large;
+    border-radius: 10px;
 }
 #p-login header{
     display: flex;
