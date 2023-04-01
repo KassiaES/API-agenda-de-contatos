@@ -1,11 +1,15 @@
 @import url(./styles/login.page.css);
+@import url(./styles/header.component.css);
+@import url(./styles/404.page.css);
+@import url(./styles/signup.page.css);
 
 body {
     margin: 0;
     padding: 0 16px;
     font-family: 'Segoe UI', sans-serif;
-    background-color: #202020;
-    color: white;
+    background-color:teal;
+    color:aquamarine;
+    text-align: center;
 }
 
 * {
@@ -31,5 +35,5 @@ input[type='radio'], input[type='checkbox'] {
 
 label {
     font-weight: 500;
-    color: blueviolet;
+    color: aquamarine;
 }

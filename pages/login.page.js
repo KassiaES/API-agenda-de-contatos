@@ -24,14 +24,19 @@ const eventos = () => {
 }
 
 export const Login = () => {
-    login.innerHTML = `
+    login.innerHTML = `    
+        <header> 
+            <img src = "https://portais.univasf.edu.br/srca/secretaria-de-registro-e-controle-academico/contato/contatos.png"/>
+        </header>    
+        <h1>Agenda de Contatos</h1>
+        <h3>Login</h3>
         <label for="email">E-mail</label>
         <input type="email" name="email">
         <label for="senha">Senha</label>
         <input type="password" name="senha">        
         <br>
         <p>
-            Não tem conta? <a href="#signup">crie aqui</a>
+            Não tem conta? <a href="/#signup">crie aqui</a>
         </p>
     `
 
