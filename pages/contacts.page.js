@@ -9,7 +9,7 @@ contacts.setAttribute('id', 'p-contacts')
 const eventos = () => {
     getAllContactsService()
         .then(({ data }) => {
-            const divContatos = contacts.querySelector('#contacts')
+            const divContatos = contacts.querySelector('#contato')
 
             data.forEach((contato) => {
                 const cardContact = CardContact(contato)
