@@ -36,8 +36,7 @@ const eventos = () => {
 export const Signup = () => {
     signup.innerHTML = `
         <h1>Dados para cadastro</h1>
-        <br>
-        <form name="register">       
+        <br>     
         <input type="text" name="nome" id="nome" placeholder="Seu nome completo" required>
             <input type="email" name="email" id="email" placeholder="E-mail" required>
             <input type="text" name="telefone" id="telelfone" placeholder="Telefone">
@@ -57,7 +56,6 @@ export const Signup = () => {
             <input type="text" name="cep" id="cep" placeholder="CEP">
             <input type="password" name="senha" id="senha" placeholder="Senha" required>
             <input type="password" name="confirmesenha" id="confirmesenha" placeholder="Confirme sua senha" required>
-        </form>
         <button type="submit">Cadastrar</button>
         <br>
         <p>Já possui conta? 

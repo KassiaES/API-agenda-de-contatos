@@ -7,14 +7,14 @@
 }
 
 #p-login input[type='radio'],
-input[type='checkbox'] {
+#p-login input[type='checkbox'] {
     margin-left: 0;
     margin-right: 10px;
     border-radius: 10px;
 }
 
 #p-login input:not(input[type='radio']):not(input[type='checkbox']),
-button {
+#p-login button {
     display: block;
     width: 100%;
     margin: 10px 0;
