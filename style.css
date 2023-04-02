@@ -3,38 +3,55 @@
 @import url(./styles/404.page.css);
 @import url(./styles/signup.page.css);
 @import url(./styles/card-contact-component.css);
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    color: #323232;
+}
 
 body {
-    margin: 0;
     padding: 0 16px;
-    font-family: 'Segoe UI', sans-serif;
-    background-color:teal;
-    color:aquamarine;
+    background-image: url('./img/Background.jpg');
+    background-size: cover;
     text-align: center;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-form {    
+form {
+    background-color: #FFF;
     display: flex;
     flex-direction: column;
-    justify-content: center;      
-
+    justify-content: center;
+    border-radius: 10px;
+    padding: 25px;
 }
 
-input:not(input[type='radio']):not(input[type='checkbox']), button {
+label {
+    color: darkslateblue;
+}
+
+input:not(input[type='radio']):not(input[type='checkbox']),
+button {
     min-height: 40px;
     padding: 5px 10px;
 }
 
-input[type='radio'], input[type='checkbox'] {
+input[type='radio'],
+input[type='checkbox'] {
     display: inline-block;
     width: auto;
 }
 
-label {
-    font-weight: 500;
-    color: aquamarine;
+button {
+    background-color: darkslateblue;
+    color: #FFF;
+}
+
+h1 {
+    font-family: 'Lobster Two', cursive;
+    font-weight: normal;
+    font-size: 2.2rem;
 }

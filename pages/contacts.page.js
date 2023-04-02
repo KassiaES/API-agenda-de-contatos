@@ -10,7 +10,7 @@ const eventos = () => {
     getAllContactsService()
         .then(({ data }) => {
             const divContatos = contacts.querySelector('#contatos')
-            
+
             data.forEach((contato) => {
                 const cardContact = CardContact(contato)
                 divContatos.appendChild(cardContact)

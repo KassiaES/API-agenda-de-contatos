@@ -11,7 +11,7 @@ const eventos = () => {
         const dadosDoFormulario = Object.fromEntries(fd)
 
         loginService(dadosDoFormulario)
-            .then(({data}) => {
+            .then(({ data }) => {
                 window.sessionStorage.setItem('@token', data.token)
                 window.sessionStorage.setItem('@user', JSON.stringify(dadosUsuario))
                 window.location.href = '/#contacts'
@@ -25,20 +25,14 @@ const eventos = () => {
 
 export const Login = () => {
     login.innerHTML = `    
-        <header> 
-            <img src = "https://portais.univasf.edu.br/srca/secretaria-de-registro-e-controle-academico/contato/contatos.png"/>
-        </header>    
         <h1>Agenda de Contatos</h1>
-        <h3>Login</h3>
-        <label for="email">E-mail</label>
-        <input type="email" name="email">
-        <label for="senha">Senha</label>
-        <input type="password" name="senha">    
-        <button type="submit">Entrar</button>
-    
         <br>
-        <p>
-            Não tem conta? <a href="/#signup">crie aqui</a>
+        <input type="email" name="email" placeholder="E-mail">
+        <input type="password" name="senha" placeholder="Senha">    
+        <button type="submit">Login</button>
+        <br>
+        <p> Não tem conta? 
+            <a href="/#signup">Clique aqui!</a>
         </p>
     `
 
