@@ -49,8 +49,8 @@ const eventos = () => {
         console.log(dadosDoFormulario)
         addContactService(dadosDoFormulario)
             .then(({ data }) => {
-                window.alert(`usuário ${data.nome} criado com sucesso!`)
-                window.open('/#contacts', '_self')
+                window.alert(`usuário ${data.nome} criado com sucesso!`)               
+                window.location.href = '/#contacts'
             })
             .catch((erro) => {
                 console.error(erro)
