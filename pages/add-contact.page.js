@@ -12,14 +12,12 @@ const eventos = () => {
         const fd = new FormData(addContact)
         const dadosDoFormulario = Object.fromEntries(fd)
 
-        // cria o atributo "telefones" no objeto dadosDoFormulario
         dadosDoFormulario.telefones = [
             { tipo: dadosDoFormulario['tipo-telefone-1'], numero: dadosDoFormulario['numero-1'] },
             { tipo: dadosDoFormulario['tipo-telefone-2'], numero: dadosDoFormulario['numero-2'] },
             { tipo: dadosDoFormulario['tipo-telefone-3'], numero: dadosDoFormulario['numero-3'] }
         ]
-
-        // filtrei apenas os telefones que têm número
+       
         dadosDoFormulario.telefones = dadosDoFormulario.telefones.filter((telefone) => {
             return telefone.numero !== ''
         })
@@ -30,8 +28,7 @@ const eventos = () => {
         delete dadosDoFormulario['numero-1']
         delete dadosDoFormulario['numero-2']
         delete dadosDoFormulario['numero-3']
-
-        // cria o atributo "endereco" no objeto dadosDoFormulario
+        
         dadosDoFormulario.endereco = {
             logradouro: dadosDoFormulario['logradouro'],
             cidade: dadosDoFormulario['cidade'],

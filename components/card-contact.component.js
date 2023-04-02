@@ -35,6 +35,7 @@ export const CardContact = (contato) => {
         <p>${contato.nome}</p>
         
         <a href="/#contacts">Deletar</a>
+        <a href="/#edit-contact">Editar</a>
         <a href="/?id-contact=${contato.id}#contact-details">Visualizar</a>
     `
 

@@ -46,6 +46,7 @@ export const ContactDetails = () => {
         <div id="cabecalho">
             <h1>Detalhes do contato</h1>
             <a href="/#contacts">Voltar para contatos</a>
+            <a href="/#edit-contact">Editar</a>
         </div>
     `
 
