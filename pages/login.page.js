@@ -1,4 +1,5 @@
 import { loginService } from "../services/auth.service.js"
+import { Header } from "../components/header.component.js"
 
 const login = document.createElement('form')
 login.setAttribute('id', 'p-login')
@@ -13,7 +14,7 @@ const eventos = () => {
         loginService(dadosDoFormulario)
             .then(({ data }) => {
                 window.sessionStorage.setItem('@token', data.token)
-                window.sessionStorage.setItem('@user', JSON.stringify(dadosUsuario))
+                window.sessionStorage.setItem('@user', JSON.stringify(data))
                 window.location.href = '/#contacts'
                 return
             })

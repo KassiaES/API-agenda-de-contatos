@@ -1,22 +1,44 @@
+import { deleteContactService } from "../services/contact.service.js"
+
 const cardContact = document.createElement('div')
 cardContact.classList.add('c-card-contact')
 
 const eventos = (contato) => {
-    const [anchorDelete] = cardContact.querySelectorAll('a')
+   
+    const cardContactClone = cardContact.cloneNode(true)
 
+    const [anchorDelete] = cardContactClone.querySelectorAll('a')
+    
     anchorDelete.addEventListener('click', (e) => {
         e.preventDefault()
-        window.confirm(`Deseja deletar o contato ${contato.nome}?`)
+        
+        const confirmacao = window.confirm(`Deseja deletar o contato ${contato.nome}?`)
+       
+        if(confirmacao === true) {
+            deleteContactService(contato.id)
+                .then(({data}) => {
+                    window.alert(data?.msg)
+                    window.location.reload()
+                })
+                .catch((erro) => {
+                    console.error(erro)
+                })
+        }
+
     })
+    
+    return cardContactClone
 }
 
 export const CardContact = (contato) => {
     cardContact.innerHTML = `
         <p>${contato.nome}</p>
+        
         <a href="/#contacts">Deletar</a>
         <a href="/?id-contact=${contato.id}#contact-details">Visualizar</a>
     `
 
-    eventos(contato)
-    return cardContact.cloneNode(true)
+    const cardContactClone = eventos(contato)
+    
+    return cardContactClone
 }

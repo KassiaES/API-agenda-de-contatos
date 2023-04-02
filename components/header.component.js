@@ -6,8 +6,8 @@ const eventos = () => {
 
     sair.addEventListener('click', (e) => {
         e.preventDefault()
-        //sessionStorage.removeItem('@token')
-        //sessionStorage.removeItem('@user')
+        sessionStorage.removeItem('@token')
+        sessionStorage.removeItem('@user')
         window.location.href = '/#login'
         window.location.reload()
     })
