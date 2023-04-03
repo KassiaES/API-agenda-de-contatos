@@ -4,7 +4,7 @@ import { Contacts } from './pages/contacts.page.js'
 import { NotFound } from './pages/404.page.js'
 import { AddContact } from './pages/add-contact.page.js'
 import { ContactDetails } from './pages/contact-details.js'
-import { EditContact } from './pages/edit-contact.page.js'
+
 
 
 const ROUTER = {
@@ -13,8 +13,7 @@ const ROUTER = {
     "#contacts": { component: Contacts, private: true, nome: 'contacts' },
     "#404": { component: NotFound, private: false, nome: '404' },
     "#contact-details": { component: ContactDetails, private: true },
-    "#add-contact": { component: AddContact, private: true },
-    "#edit-contact": { component: AddContact, private: true },
+    "#add-contact": { component: AddContact, private: true },   
 }
 
 function isTokenExpired(token) {

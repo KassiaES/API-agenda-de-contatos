@@ -19,7 +19,9 @@ const eventos = () => {
                 return
             })
             .catch((erro) => {
-                console.log(erro)
+                console.log(erro)                
+                window.alert(`Inválido, tente novamente!`) 
+                window.location.reload() 
             })
     })
 }

@@ -16,8 +16,10 @@ const eventos = () => {
             .then((resposta) => {
 
                 if (resposta.status === 409) {
-                    spanMensagem.innerText = resposta.mensagem
-
+                    
+                    window.alert(`Usuário cadastrado, tente novamente!`) 
+                    window.location.reload()
+                    
                     setTimeout(() => {
                         spanMensagem.innerText = null
                     }, 3000)
@@ -29,6 +31,8 @@ const eventos = () => {
             .catch((erro) => {
                 spanMensagem.innerText = 'Erro interno, tente novamente mais tarde!'
                 console.error(erro)
+                window.alert(`Inválido, tente novamente!`) 
+                window.location.reload() 
             })
     })
 }

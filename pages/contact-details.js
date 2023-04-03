@@ -55,7 +55,9 @@ export const ContactDetails = () => {
             <button>
                 <a href="/#contacts">Voltar para contatos</a>
             </button>
+            <button>
                 <a href="/#edit-contact">Editar</a>
+                <button>
         </div>
         <br>
     `
