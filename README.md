@@ -1,6 +1,6 @@
-<div align="center">
+<img align="center">
 ![image](https://user-images.githubusercontent.com/68701354/229578694-ff6c86a7-35e5-42c8-8b40-defa383e2498.png)
-</div>
+</img>
 
 # Agenda Eletrônica de Contatos
 
@@ -16,6 +16,6 @@ https://github.com/dkayke-aulas/agenda-contatos-backend
 
 2. É necessário também um servidor apache rodando localmente, pode ser utilizado o pacote XAMP pra isso mas, para facilitar, existe também uma extensão do próprio VSCode chamada Live Server. 
 
-<div align="center">
+<img align="center">
 ![image](https://user-images.githubusercontent.com/68701354/229581159-1d6b7572-6763-41f4-8c49-9d3866f4fd8b.png)
-</div>
+</img>
