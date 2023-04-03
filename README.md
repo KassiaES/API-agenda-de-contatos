@@ -34,4 +34,5 @@ https://github.com/dkayke-aulas/agenda-contatos-backend
 /#signup
 /#contacts
 /?id-contact={id}#contact-details
+/#404
 ```
