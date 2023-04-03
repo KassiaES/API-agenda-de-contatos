@@ -1,10 +1,9 @@
 const urlBase = "http://localhost:5000/v1/"
 
-const headers = new Headers()
-headers.set('Content-Type', 'application/json')
-
 export const getAllContactsService = async () => {
     const url = urlBase + 'contact'
+    const headers = new Headers()
+    headers.set('Content-Type', 'application/json')
     headers.set('Authorization', `${sessionStorage.getItem('@token')}`)
 
     const resposta = await fetch(url, {
@@ -17,6 +16,8 @@ export const getAllContactsService = async () => {
 
 export const getContactService = async (id) => {
     const url = urlBase + `contact/${id}`
+    const headers = new Headers()
+    headers.set('Content-Type', 'application/json')
     headers.set('Authorization', sessionStorage.getItem('@token'))
 
     const resposta = await fetch(url, {
@@ -29,6 +30,8 @@ export const getContactService = async (id) => {
 
 export const deleteContactService = async (idContato) => {
     const url = urlBase + `contact`
+    const headers = new Headers()
+    headers.set('Content-Type', 'application/json')
     headers.set('Authorization', sessionStorage.getItem('@token'))
 
     const resposta = await fetch(url, {
@@ -42,6 +45,8 @@ export const deleteContactService = async (idContato) => {
 
 export const addContactService = async (dados) => {
     const url = urlBase + `contact`
+    const headers = new Headers()
+    headers.set('Content-Type', 'application/json')
     headers.set('Authorization', sessionStorage.getItem('@token'))
 
     const resposta = await fetch(url, {
