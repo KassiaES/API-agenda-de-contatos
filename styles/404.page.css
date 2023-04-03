@@ -1,4 +1,4 @@
-#p-not-found  {
+#p-not-found {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,17 +7,13 @@
 }
 
 #p-not-found input:not(input[type='radio']):not(input[type='checkbox']),
-button {
+#p-not-found button {
     display: block;
     width: 100%;
     margin: 10px 0;
     box-sizing: border-box;
     font-size: large;
     border-radius: 10px;
-}
-
-#p-not-found a {
-    color: #fff;
 }
 
 #p-not-found img {

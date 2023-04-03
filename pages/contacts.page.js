@@ -27,10 +27,13 @@ export const Contacts = () => {
     root.append(componenteHeader)
 
     contacts.innerHTML = `
-    <div id="cabecalho">
         <h1>Contatos</h1>
-        <a href="/#add-contact">Adicionar contato</a>
-    </div>
+        <br>
+        <button>
+            <a href="/#add-contact">Adicionar contato</a>
+        </button>
+        <br>
+        <br>
         <div id="contatos"></div>
     `
 

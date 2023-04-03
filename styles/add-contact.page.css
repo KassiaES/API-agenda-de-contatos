@@ -1,0 +1,38 @@
+#p-add-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+    margin: 5vh auto;
+}
+
+#p-add-contact fieldset {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+#p-add-contact input[type='radio'],
+#p-add-contact input[type='checkbox'] {
+    margin-left: 0;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+#p-add-contact input,
+#p-add-contact button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    box-sizing: border-box;
+    font-size: large;
+    border-radius: 5px;
+}
+
+#p-add-contact a,
+#p-add-contact p {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-align: right;
+}

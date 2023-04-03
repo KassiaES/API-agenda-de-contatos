@@ -3,6 +3,8 @@
 @import url(./styles/404.page.css);
 @import url(./styles/signup.page.css);
 @import url(./styles/contacts.page.css);
+@import url(./styles/add-contact.page.css);
+@import url(./styles/contact-details.css);
 @import url(./styles/card-contact-component.css);
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
 
@@ -16,22 +18,20 @@
 
 body {
     padding: 0 16px;
-    background-image: url('./img/Fundo.jpg');
+    background-image: url('./img/Background.jpg');
     background-size: cover;
     text-align: center;
 }
 
 form {
+    animation-name: fade;
+    animation-duration: 500ms;
     background-color: #FFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-radius: 10px;
     padding: 25px;
-}
-
-label {
-    color: darkslateblue;
 }
 
 input:not(input[type='radio']):not(input[type='checkbox']),
@@ -47,12 +47,25 @@ input[type='checkbox'] {
 }
 
 button {
-    background-color: darkslateblue;
-    color: #FFF;
+    background-color: #a5dbf0;
+    color: #323232;
+    border: none;
 }
 
 h1 {
     font-family: 'Lobster Two', cursive;
     font-weight: normal;
     font-size: 2.2rem;
+}
+
+ /* Animação */
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    } to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }

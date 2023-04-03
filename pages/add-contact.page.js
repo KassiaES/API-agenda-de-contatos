@@ -46,7 +46,7 @@ const eventos = () => {
         console.log(dadosDoFormulario)
         addContactService(dadosDoFormulario)
             .then(({ data }) => {
-                window.alert(`usuário ${data.nome} criado com sucesso!`)               
+                window.alert(`Contato ${data.nome} criado com sucesso!`)               
                 window.location.href = '/#contacts'
             })
             .catch((erro) => {
@@ -60,16 +60,17 @@ export const AddContact = () => {
     root.append(componenteHeader)
 
     addContact.innerHTML = `
-        <div id="cabecalho">
-            <h1>Novo contato</h1>
+        <h1>Novo contato</h1>
+        <br> 
+        <button type="submit">
             <a href="/?#contacts">Voltar para contatos</a>
-        </div>
+        </button>            
+        <br>
         <fieldset>
             <legend>Dados pessoais</legend>
             <input placeholder="Nome" name="nome" type="text" required/>
             <input placeholder="Apelido" name="apelido" type="text" />
             <input placeholder="E-mail" name="email" type="email" />
-            <textarea placeholder="Nota" name="notas" /></textarea>
         </fieldset>
         <fieldset>
             <legend>Endereço</legend>
@@ -79,7 +80,6 @@ export const AddContact = () => {
             <input placeholder="CEP" name="cep" type="text" />
             <input placeholder="País" name="pais" type="text" />
         </fieldset>
-            
         <fieldset>
             <legend>Telefones</legend>
             <select name="tipo-telefone-1">
@@ -101,7 +101,7 @@ export const AddContact = () => {
             </select>
             <input name="numero-3" placeholder="Insira o número aqui..." type="phone" />
         </fieldset>
-        <button>Cadastrar</button>
+        <button type="submit">Cadastrar</button>
     `
 
     eventos()

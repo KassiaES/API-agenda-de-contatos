@@ -1,0 +1,29 @@
+#p-contact-details {
+    animation-name: fade;
+    animation-duration: 500ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFF;
+    border-radius: 10px;
+    max-width: 450px;
+    margin: 10vh auto;
+    padding: 25px;
+}
+
+#p-contact-details button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    box-sizing: border-box;
+    font-size: large;
+    border-radius: 5px;
+}
+
+#p-contact-details a,
+#p-contact-details p {
+    padding: 0;
+    margin: 4px;
+    border: 0;
+    text-align: center;
+}
