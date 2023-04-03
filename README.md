@@ -24,4 +24,4 @@ https://github.com/dkayke-aulas/agenda-contatos-backend
 - Adicionar contato;
 - Visualizar detalhes do contato;
 - Deletar contatos;
-- Sair;
+- Sair.
