@@ -3,9 +3,8 @@
 # Agenda Eletrônica de Contatos
 <br/>
 Projeto final do módulo de front-end, de uma agenda eletrônica, criado no curso de Automação de Testes da escola ADA. Foi desencolvido em cima do conceito de Single Page Applications.
-<br />
+<br/><br/>
 > **_Single Page Applications? Oi ?_** Chamamos de Single Page Application as aplicações web ou site que consistem de uma única página web, com o objetivo de fornecer uma experiência do usuário similar à de um aplicativo desktop. 
-<br />
 
 ##
 ### Como faço para acessar tudo corretamente?
