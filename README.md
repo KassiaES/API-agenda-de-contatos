@@ -21,7 +21,7 @@ https://github.com/dkayke-aulas/agenda-contatos-backend
 ![image](https://user-images.githubusercontent.com/68701354/229581159-1d6b7572-6763-41f4-8c49-9d3866f4fd8b.png)
 
 ##
-### O que eu consigo fazer no projeto?
+### O que eu consigo fazer na agenda?
 - Criar conta;
 - Fazer login;
 - Adicionar contato;
@@ -30,7 +30,7 @@ https://github.com/dkayke-aulas/agenda-contatos-backend
 - Sair.
 
 ##
-### Quais as páginas que existem no projeto?
+### Quais as páginas que existem na aplicação?
 
 ```sh
 /#login
