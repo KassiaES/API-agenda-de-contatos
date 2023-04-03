@@ -12,6 +12,8 @@ const eventos = () => {
 
     getContactService(idContato)
         .then(({ data }) => {
+            window.sessionStorage.setItem('@contact', JSON.stringify(data))
+            window.location.href = '/#edit-contacts'
             contactDetails.innerHTML += `
                 <h2>${data.nome}</h2>
                 <br>
@@ -53,6 +55,7 @@ export const ContactDetails = () => {
             <button>
                 <a href="/#contacts">Voltar para contatos</a>
             </button>
+                <a href="/#edit-contact">Editar</a>
         </div>
         <br>
     `
