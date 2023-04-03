@@ -4,6 +4,7 @@
 
 Projeto front-end de uma agenda eletrônica, criado no curso de Automação de Testes da escola ADA.
 
+##
 ### Como faço para acessar tudo corretamente?
 
 1. Primeiro é necessário clonar o projeto de uma API responsável por persistir os dados para gerenciamento da agenda eletrônica. Este projeto está disponível no git abaixo, criado com o intuito acadêmico de ensino de front-end, e possui todas as informações necessárias para conseguir rodá-lo.
