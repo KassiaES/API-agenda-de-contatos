@@ -33,7 +33,6 @@ export const Contacts = () => {
             <a href="/#add-contact">Adicionar contato</a>
         </button>
         <br>
-        <br>
         <div id="contatos"></div>
     `
 
