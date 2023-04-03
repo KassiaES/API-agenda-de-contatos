@@ -14,14 +14,18 @@ const eventos = () => {
         .then(({ data }) => {
             contactDetails.innerHTML += `
                 <h2>${data.nome}</h2>
+                <br>
                 <p>Apelido: ${data.apelido}</p>
                 <p>Email: ${data.email}</p>
                 <p>Observação: ${data.notas}</p>
+                <br>
                 <hr/>
+                <br>
                 <h3>Endereço</h3>
                 <p>Logradouro: ${data.endereco.logradouro}</p>
-                
+                <br>
                 <hr/>
+                <br>
                 <h3>Telefone</h3>
             `
 
@@ -45,8 +49,12 @@ export const ContactDetails = () => {
     contactDetails.innerHTML = `
         <div id="cabecalho">
             <h1>Detalhes do contato</h1>
-            <a href="/#contacts">Voltar para contatos</a>
+            <br>
+            <button>
+                <a href="/#contacts">Voltar para contatos</a>
+            </button>
         </div>
+        <br>
     `
 
     eventos()

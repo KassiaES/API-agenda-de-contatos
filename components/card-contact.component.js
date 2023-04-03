@@ -33,7 +33,6 @@ const eventos = (contato) => {
 export const CardContact = (contato) => {
     cardContact.innerHTML = `
         <p>${contato.nome}</p>
-        
         <a href="/#contacts">Deletar</a>
         <a href="/?id-contact=${contato.id}#contact-details">Visualizar</a>
     `

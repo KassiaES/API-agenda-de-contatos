@@ -38,24 +38,24 @@ export const Signup = () => {
         <h1>Dados para cadastro</h1>
         <br>     
         <input type="text" name="nome" id="nome" placeholder="Seu nome completo" required>
-            <input type="email" name="email" id="email" placeholder="E-mail" required>
-            <input type="text" name="telefone" id="telelfone" placeholder="Telefone">
-            <br> 
-            <fieldset>
-                <label for="homePhoneType">Casa</label>
-                <input type="radio" name="phoneType" id="homePhoneType" value="casa">
-                <label for="workPhoneType">Trabalho</label>
-                <input type="radio" name="phoneType" id="workPhoneType" value="trabalho">
-                <label for="cellPhoneType">Celular</label>
-                <input type="radio" name="phoneType" id="cellPhoneType" value="celular">
-            </fieldset>
-            <br>
-            <input type="text" name="logradouro" id="logradouro" placeholder="Endereço">
-            <input type="text" name="cidade" id="cidade" placeholder="Cidade">
-            <input type="text" name="estado" id="estado" placeholder="Estado">
-            <input type="text" name="cep" id="cep" placeholder="CEP">
-            <input type="password" name="senha" id="senha" placeholder="Senha" required>
-            <input type="password" name="confirmesenha" id="confirmesenha" placeholder="Confirme sua senha" required>
+        <input type="email" name="email" id="email" placeholder="E-mail" required>
+        <input type="text" name="telefone" id="telelfone" placeholder="Telefone">
+        <br> 
+        <fieldset>
+            <label for="homePhoneType">Casa</label>
+            <input type="radio" name="phoneType" id="homePhoneType" value="casa">
+            <label for="workPhoneType">Trabalho</label>
+            <input type="radio" name="phoneType" id="workPhoneType" value="trabalho">
+            <label for="cellPhoneType">Celular</label>
+            <input type="radio" name="phoneType" id="cellPhoneType" value="celular">
+        </fieldset>
+        <br>
+        <input type="text" name="logradouro" id="logradouro" placeholder="Endereço">
+        <input type="text" name="cidade" id="cidade" placeholder="Cidade">
+        <input type="text" name="estado" id="estado" placeholder="Estado">
+        <input type="text" name="cep" id="cep" placeholder="CEP">
+        <input type="password" name="senha" id="senha" placeholder="Senha" required>
+        <input type="password" name="confirmesenha" id="confirmesenha" placeholder="Confirme sua senha" required>
         <button type="submit">Cadastrar</button>
         <br>
         <p>Já possui conta? 

@@ -1,13 +1,16 @@
 #c-header {
     display: flex;
-    background-color: aliceblue;
-    color: teal;
     justify-content: space-between;
     padding: 10px;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 15px;
+    font-size: 1.0rem;
+    animation-name: fade;
+    animation-duration: 500ms;
 }
 
-#c-header a {
-    color: teal;
+#c-header a,
+#c-header span {
+    font-weight: bold;
+    color: #fff;
 }
