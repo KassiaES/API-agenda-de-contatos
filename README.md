@@ -30,8 +30,8 @@ https://github.com/dkayke-aulas/agenda-contatos-backend
 ### Quais as páginas que existem no projeto?
 
 ```sh
-- /#login
-- /#signup
-- /#contacts
-- /?id-contact={id}#contact-details
+/#login
+/#signup
+/#contacts
+/?id-contact={id}#contact-details
 ```
