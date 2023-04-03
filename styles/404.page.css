@@ -6,7 +6,6 @@
     margin: 30vh auto;
 }
 
-#p-not-found input:not(input[type='radio']):not(input[type='checkbox']),
 #p-not-found button {
     display: block;
     width: 100%;
