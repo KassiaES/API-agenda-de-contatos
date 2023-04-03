@@ -12,13 +12,6 @@
     border: 0;
 }
 
-#p-add-contact input[type='radio'],
-#p-add-contact input[type='checkbox'] {
-    margin-left: 0;
-    margin-right: 10px;
-    border-radius: 10px;
-}
-
 #p-add-contact input,
 #p-add-contact button {
     display: block;

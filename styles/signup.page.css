@@ -12,14 +12,13 @@
     border: 0;
 }
 
-#p-signup input[type='radio'],
-#p-signup input[type='checkbox'] {
+#p-signup input[type='radio'] {
     margin-left: 0;
     margin-right: 10px;
     border-radius: 10px;
 }
 
-#p-signup input:not(input[type='radio']):not(input[type='checkbox']),
+#p-signup input:not(input[type='radio']),
 #p-signup button {
     display: block;
     width: 100%;

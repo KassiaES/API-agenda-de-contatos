@@ -6,14 +6,7 @@
     margin: 30vh auto;
 }
 
-#p-login input[type='radio'],
-#p-login input[type='checkbox'] {
-    margin-left: 0;
-    margin-right: 10px;
-    border-radius: 10px;
-}
-
-#p-login input:not(input[type='radio']):not(input[type='checkbox']),
+#p-login input,
 #p-login button {
     display: block;
     width: 100%;
