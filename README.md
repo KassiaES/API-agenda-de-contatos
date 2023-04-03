@@ -25,3 +25,13 @@ https://github.com/dkayke-aulas/agenda-contatos-backend
 - Visualizar detalhes do contato;
 - Deletar contatos;
 - Sair.
+
+##
+### Quais as páginas que existem no projeto?
+
+```sh
+- /#login
+- /#signup
+- /#contacts
+- /?id-contact={id}#contact-details
+```
