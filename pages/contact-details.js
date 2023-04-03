@@ -12,6 +12,8 @@ const eventos = () => {
 
     getContactService(idContato)
         .then(({ data }) => {
+            window.sessionStorage.setItem('@contact', JSON.stringify(data))
+            window.location.href = '/#edit-contacts'
             contactDetails.innerHTML += `
                 <h2>${data.nome}</h2>
                 <p>Apelido: ${data.apelido}</p>

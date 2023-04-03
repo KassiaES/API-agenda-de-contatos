@@ -1,45 +1,24 @@
 import { Header } from "../components/header.component.js"
-import { editContactService, getContactService } from "../services/contact.service.js"
+import { getContactService } from "../services/contact.service.js"
 
 const root = document.querySelector('#root')
 const editContact = document.createElement('form')
 editContact.setAttribute('id', 'p-edit-contact')
 
 const eventos = () => {
-
-    const url = new URL(window.location.href)
-    const params = url.searchParams
-    const idContato = params.get('id-contact')
-
-    getContactService(idContato)
+    getContactService()
         .then(({ data }) => {
-            contactDetails.innerHTML += `
-                <h2>${data.nome}</h2>
-                <p>Apelido: ${data.apelido}</p>
-                <p>Email: ${data.email}</p>
-                <p>Observação: ${data.notas}</p>
-                <hr/>
-                <h3>Endereço</h3>
-                <p>Logradouro: ${data.endereco.logradouro}</p>
-                
-                <hr/>
-                <h3>Telefone</h3>
-            `
+            document.getElementById("nome").value = data.nome
+            console.log(data)
 
-            data.telefones.forEach((telefone) => {
-                contactDetails.innerHTML += `
-                    <p>Tipo: ${telefone.tipo}</p>
-                    <p>Numero: ${telefone.numero}</p>
-                    <br>
-                `
-            })
+
+
         })
         .catch((e) => {
             console.log(e)
         })
-
-
 }
+
 
 export const EditContact = () => {
     const componenteHeader = Header()

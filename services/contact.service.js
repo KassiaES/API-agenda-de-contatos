@@ -52,16 +52,3 @@ export const addContactService = async (dados) => {
 
     return await resposta.json()
 }
-
-export const editContactService = async (dados) => {
-    const url = urlBase + `contact`
-    headers.set('Authorization', sessionStorage.getItem('@token'))
-
-    const resposta = await fetch(url, {
-        headers,
-        method: 'PATCH',
-        body: JSON.stringify(dados)
-    })
-
-    return await resposta.json()
-}
