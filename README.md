@@ -2,7 +2,7 @@
 
 # Agenda Eletrônica de Contatos
 <br/>
-Projeto final do módulo de front-end, de uma agenda eletrônica, criado no curso de Automação de Testes da escola ADA.
+Projeto final do módulo de front-end, de uma agenda eletrônica, criado no curso de Automação de Testes da escola ADA. Foi desencolvido em cima do conceito de Single Page Applications.
 
 ##
 ### Como faço para acessar tudo corretamente?
@@ -13,7 +13,7 @@ Projeto final do módulo de front-end, de uma agenda eletrônica, criado no curs
 https://github.com/dkayke-aulas/agenda-contatos-backend
 ```
 
-2. É necessário também um servidor apache rodando localmente, pode ser utilizado o pacote XAMP pra, mas, para facilitar, existe também uma extensão do próprio VSCode chamada Live Server. 
+2. É necessário também um servidor apache rodando localmente, pode ser utilizado o pacote XAMP, mas para facilitar, existe também uma extensão do próprio VSCode chamada Live Server. 
 
 ![image](https://user-images.githubusercontent.com/68701354/229581159-1d6b7572-6763-41f4-8c49-9d3866f4fd8b.png)
 
