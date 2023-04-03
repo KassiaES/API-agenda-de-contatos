@@ -29,6 +29,15 @@
     border-radius: 5px;
 }
 
+#p-add-contact textarea {
+    width: 100%;
+    margin: 10px 0;
+    box-sizing: border-box;
+    font-size: large;
+    border-radius: 5px;
+    justify-content: center;
+}
+
 #p-add-contact a,
 #p-add-contact p {
     padding: 0;

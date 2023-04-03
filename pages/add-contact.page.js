@@ -71,6 +71,7 @@ export const AddContact = () => {
             <input placeholder="Nome" name="nome" type="text" required/>
             <input placeholder="Apelido" name="apelido" type="text" />
             <input placeholder="E-mail" name="email" type="email" />
+            <textarea placeholder="Nota" name="notas" /></textarea>
         </fieldset>
         <fieldset>
             <legend>Endereço</legend>
