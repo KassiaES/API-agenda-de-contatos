@@ -1,7 +1,7 @@
 ![image](https://user-images.githubusercontent.com/68701354/229578694-ff6c86a7-35e5-42c8-8b40-defa383e2498.png)
 
 # Agenda Eletrônica de Contatos
-
+<br/>
 Projeto front-end de uma agenda eletrônica, criado no curso de Automação de Testes da escola ADA.
 
 ##
