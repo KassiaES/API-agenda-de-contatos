@@ -2,7 +2,7 @@
 
 # Agenda Eletrônica de Contatos
 <br/>
-Projeto front-end de uma agenda eletrônica, criado no curso de Automação de Testes da escola ADA.
+Projeto final do módulo de front-end, de uma agenda eletrônica, criado no curso de Automação de Testes da escola ADA.
 
 ##
 ### Como faço para acessar tudo corretamente?
